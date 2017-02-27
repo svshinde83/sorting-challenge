@@ -16,22 +16,24 @@ public class SortingUtilsTest {
 
     private SortingUtils utils;
 
+    private List<String> listToSort;
 
     @Before
     public void setUp() {
         utils = new SortingUtils();
+
+        listToSort = new ArrayList<String>() {{
+            add(0, "12m");
+            add(1, "122m");
+            add(2, "0.5m");
+            add(3, "5565.55m");
+            add(4, "45698.56m");
+            add(5, "-456m");
+            add(6, ".56m");
+
+        }};
     }
 
-    private static List<String> listToSort = new ArrayList<String>() {{
-        add(0, "12m");
-        add(1, "122m");
-        add(2, "0.5m");
-        add(3, "5565.55m");
-        add(4, "45698.56m");
-        add(5, "-456m");
-        add(6,".56m");
-
-    }};
 
     @Test
     public void testGetSortedList() throws Exception {
