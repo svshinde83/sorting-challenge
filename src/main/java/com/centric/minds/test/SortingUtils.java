@@ -40,7 +40,7 @@ public class SortingUtils {
     /**
      * Assumptions:
      * 1. Each element start with either a number or a decimal followed by a number
-     * 2. Precision while sorting is of 2 digits after decimal point
+     * 2. Precision while sorting is of 2 places after decimal point
      * 3. elements end with "m"
      *
      * @param listToSort an alphanumeric list of Strings with each element ending in "m" to sort ascending numerically.
