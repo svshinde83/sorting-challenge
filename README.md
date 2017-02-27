@@ -1,5 +1,5 @@
 # sorting-challenge
-## This repository is an application to do arithmetic calculations.
+## This repository is an application to do sort a list of alphanumeric strings.
 
 ### Dependencies:
 
