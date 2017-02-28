@@ -32,9 +32,9 @@ public class SortingUtils {
         SortingUtils utils = new SortingUtils();
 
         List<String> sortedList = utils.getSortedList(listToSort);
-//
-//        logger.info("Given list : \n" + sortedList.toString());
-//        logger.info("Sorted List : \n" + sortedList.toString());
+
+        logger.info("Given list : \n" + sortedList.toString());
+        logger.info("Sorted List : \n" + sortedList.toString());
     }
 
     /**
