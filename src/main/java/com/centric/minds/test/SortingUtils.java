@@ -14,9 +14,6 @@ public class SortingUtils {
 
     private static final Logger logger = Logger.getLogger(SortingUtils.class.getName());
 
-
-    // [“1m”, “1.5m”, “10m”, “2m”, “2.5m”, “3m”]
-    //[“1m”, “1.5m”, “2m”, “2.5m”, “3m”, “10m”]
     private static List<String> listToSort = new ArrayList<String>() {{
         add(0, "1m");
         add(1, "1.5m");
