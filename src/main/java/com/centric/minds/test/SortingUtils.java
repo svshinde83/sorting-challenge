@@ -32,9 +32,9 @@ public class SortingUtils {
         SortingUtils utils = new SortingUtils();
 
         List<String> sortedList = utils.getSortedList(listToSort);
-
-        logger.info("Given list : \n" + sortedList.toString());
-        logger.info("Sorted List : \n" + sortedList.toString());
+//
+//        logger.info("Given list : \n" + sortedList.toString());
+//        logger.info("Sorted List : \n" + sortedList.toString());
     }
 
     /**
@@ -52,6 +52,13 @@ public class SortingUtils {
         return getOrderedList(floatsWithoutM);
     }
 
+    /**
+     * This function accepts a list of Strings to sort.
+     * Iterates over it to find "m" and reads the number preceeding it to form a new list and sorts it.
+     *
+     * @param listToSort input parameter
+     * @return sorted list in ascending order with decimal values in it.
+     */
     private List<Float> getOrderedListWithoutM(List<String> listToSort) {
 
         List<Float> floatsWithoutM = new ArrayList<Float>(listToSort.size());
@@ -70,6 +77,13 @@ public class SortingUtils {
         return floatsWithoutM;
     }
 
+    /**
+     * This function formats the ascending order sorted list of decimal or whole numbers and appends letter "m"
+     * to it.
+     *
+     * @param floatsWithoutM input parameter
+     * @return sorted list with formatting.
+     */
     private List<String> getOrderedList(List<Float> floatsWithoutM) {
 
         List<String> sortedList = new ArrayList<String>(listToSort.size());
